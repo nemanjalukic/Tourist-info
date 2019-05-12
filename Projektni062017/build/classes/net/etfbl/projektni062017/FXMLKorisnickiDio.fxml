@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="312.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.projektni062017.FXMLKorisnickiDioController">
+   <children>
+      <Label layoutX="15.0" layoutY="14.0" text="Dimenzije matrice:" />
+      <Label layoutX="170.0" layoutY="14.0" text="X" />
+      <TextField layoutX="119.0" layoutY="10.0" prefHeight="25.0" prefWidth="45.0" fx:id="xText" />
+      <TextField fx:id="yText" layoutX="185.0" layoutY="10.0" prefHeight="25.0" prefWidth="45.0" />
+      <TextField fx:id="turistiText" layoutX="306.0" layoutY="10.0" prefHeight="25.0" prefWidth="45.0" />
+      <Label layoutX="243.0" layoutY="14.0" text="Broj turista:" />
+      <TextField fx:id="atrakcijaText" layoutX="446.0" layoutY="10.0" prefHeight="25.0" prefWidth="45.0" />
+      <Label layoutX="369.0" layoutY="14.0" text="Broj atrakcija:" />
+      <Button fx:id="pokreniButton" layoutX="506.0" layoutY="10.0" mnemonicParsing="false" text="Pokreni simulaciju" />
+      <TableView fx:id="tabela" layoutX="13.0" layoutY="47.0" prefHeight="220.0" prefWidth="607.0">
+        <columns>
+          <TableColumn fx:id="imeCol" prefWidth="304.0" text="Ime" />
+          <TableColumn fx:id="posijecenoCol" prefWidth="302.0" text="Broj posijećenih %" />
+        </columns>
+      </TableView>
+      <Button fx:id="preuzmiButton" layoutX="15.0" layoutY="273.0" mnemonicParsing="false" text="Preuzmi rezultate" />
+      <Button fx:id="prikaziButton" layoutX="142.0" layoutY="273.0" mnemonicParsing="false" text="Prikazi letak" />
+   </children>
+</AnchorPane>

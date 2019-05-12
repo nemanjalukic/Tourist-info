@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="392.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.etfbl.projektni062017.FXMLDocumentController">
+   <children>
+      <TableView fx:id="tabela" layoutX="6.0" layoutY="87.0" prefHeight="241.0" prefWidth="532.0">
+        <columns>
+          <TableColumn fx:id="colNaziv" prefWidth="216.0" text="Naziv" />
+            <TableColumn fx:id="colLokacija" minWidth="0.0" prefWidth="314.0" text="Lokacija" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="tipChoice" layoutX="14.0" layoutY="14.0" prefWidth="150.0" />
+      <Label layoutX="177.0" layoutY="18.0" prefHeight="17.0" prefWidth="44.0" text="Naziv:" />
+      <TextField fx:id="nazivText" layoutX="218.0" layoutY="14.0" prefHeight="25.0" prefWidth="143.0" />
+      <TextField fx:id="lokacijaText" layoutX="437.0" layoutY="14.0" prefHeight="25.0" prefWidth="292.0" />
+      <Label layoutX="377.0" layoutY="18.0" prefHeight="17.0" prefWidth="54.0" text="Lokacija:" />
+      <Label fx:id="opisLab" layoutX="14.0" layoutY="57.0" prefHeight="17.0" prefWidth="37.0" text="Opis:" />
+      <TextField fx:id="opisText" layoutX="51.0" layoutY="53.0" prefHeight="25.0" prefWidth="292.0" />
+      <Button fx:id="brisanjeButton" layoutX="141.0" layoutY="346.0" mnemonicParsing="false" text="Izbrisi" />
+      <Button fx:id="korisnikButton" layoutX="14.0" layoutY="346.0" mnemonicParsing="false" text="Korsnicki dio" />
+      <TextField fx:id="cijenaText" layoutX="416.0" layoutY="53.0" prefHeight="25.0" prefWidth="133.0" />
+      <Label fx:id="cijenaLab" layoutX="371.0" layoutY="57.0" prefHeight="17.0" prefWidth="44.0" text="Cijena:" />
+      <Button fx:id="fajlButton" layoutX="558.0" layoutY="53.0" mnemonicParsing="false" text="Dodaj fajl" />
+      <Button fx:id="izmijenaButton" layoutX="261.0" layoutY="346.0" mnemonicParsing="false" text="Izmijeni" />
+      <ImageView fx:id="slika" fitHeight="150.0" fitWidth="200.0" layoutX="549.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="fajlLab" layoutX="549.0" layoutY="87.0" prefHeight="17.0" prefWidth="200.0" />
+      <Button fx:id="dodajButton" layoutX="640.0" layoutY="53.0" mnemonicParsing="false" text="Dodaj atrakciju" />
+      <Button fx:id="izmijenaKonacnoButton" layoutX="409.0" layoutY="346.0" mnemonicParsing="false" text="Zavrsi sa izmijenom" />
+   </children>
+</AnchorPane>
